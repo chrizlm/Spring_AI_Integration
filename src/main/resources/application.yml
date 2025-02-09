@@ -1,0 +1,18 @@
+#spring.application.name=deepseekai
+
+spring:
+  ai:
+    chat:
+      client:
+        enabled: false
+    openai:
+      api-key: ${DEEP_SEEK_API_KEY}
+      base-url: https://api.deepseek.com
+      chat:
+        options:
+          model: deepseek-reasoner
+    ollama:
+      base-url: http://127.0.0.1:11434
+      chat:
+        options:
+          model: deepseek-r1:latest
