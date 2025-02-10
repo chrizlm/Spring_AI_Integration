@@ -1,6 +1,10 @@
-#spring.application.name=deepseekai
+#spring.application.name=deepseekai spring.servlet.multipart.max-file-size
 
 spring:
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
   ai:
     chat:
       client:
