@@ -13,7 +13,7 @@ import java.util.Map;
 public class ChatControllerDeepseek {
     public final ChatClient chatClient;
 
-    public ChatControllerDeepseek(@Qualifier("openAiChatClient") ChatClient chatClient) {
+    public ChatControllerDeepseek(@Qualifier("OllamaChatClient") ChatClient chatClient) {
         this.chatClient = chatClient;
     }
 

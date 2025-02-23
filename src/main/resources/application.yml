@@ -10,12 +10,17 @@ spring:
       client:
         enabled: false
     openai:
-      api-key: ${DEEP_SEEK_API_KEY}
-      base-url: https://api.deepseek.com
-      chat:
-        options:
-          model: deepseek-reasoner
+      enabled: false
+#      api-key: ${DEEP_SEEK_API_KEY}
+#      base-url: https://api.deepseek.com
+#      chat:
+#        options:
+#          model: deepseek-reasoner
     ollama:
+      embedding:
+        enabled: true
+        options:
+          model: mxbai-embed-large:latest
       base-url: http://127.0.0.1:11434
       chat:
         options:
