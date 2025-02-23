@@ -63,4 +63,10 @@ public class ChatControllerOllama {
         return chatClient.prompt(prompt).call().content();
     }
 
+    @GetMapping("/ollama/rag")
+    public String chatRag(
+            @RequestParam(value = "message", defaultValue = "Summarize the trends") String message){
+        return this.chatClient.prompt().user(message).call().content();
+    }
+
 }
